@@ -48,6 +48,9 @@
     if (type == HJPlayViewTypeForPlay) {
         _maskView = [self maskView];
     }
+    if (type == HJPlayViewTypeForScan) {
+        
+    }
 }
 
 - (HJPlayerMaskView *)maskView {

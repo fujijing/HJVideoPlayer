@@ -134,13 +134,12 @@
             Float64 durationTime = CMTimeGetSeconds(weakSelf.playerItem.currentTime);
             [weakSelf.delegate videoCurrentTime:durationTime];
         }
-        
     }];
 }
 
 - (void)removePeriodicTimeObserver {
     if (_playbackTimeObserver) {
-        [self.player removeTimeObserver:_playbackTimeObserver];
+        [self.player removeTimeObserver:self.playbackTimeObserver];
         _playbackTimeObserver = nil;
     }
 }
